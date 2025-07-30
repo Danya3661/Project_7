@@ -1,0 +1,77 @@
+@use './helpers/variables' as *;
+@mixin st_btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	white-space: nowrap;
+
+	cursor: pointer;
+	text-decoration: none;
+}
+%btn_1 {
+	@include st_btn;
+	max-width: 15.8rem;
+	height: 5rem;
+	padding: 0 2.4rem;
+}
+%btn_2 {
+	@include st_btn;
+	max-width: 13.8rem;
+	height: 5rem;
+	padding: 0 2.4rem;
+}
+%btn_3 {
+	@include st_btn;
+	max-width: 21rem;
+	height: 5rem;
+	padding: 0 2.4rem;
+}
+%btn_4 {
+	@include st_btn;
+	max-width: 18.4rem;
+	height: 5rem;
+	padding: 0 2.4rem;
+}
+%btn_5 {
+	@include st_btn;
+	max-width: 24rem;
+	height: 5rem;
+	padding: 0 2.4rem;
+}
+%btn_color_1 {
+	background-color: $color_blue;
+	color: $color_white;
+	transition: all 0.5s ease-in-out;
+	&:hover {
+		background-color: $color_white_2;
+		color: $color_text;
+	}
+}
+%btn_color_1_1 {
+	background-color: $color_blue;
+	color: $color_white;
+	transition: all 0.5s ease-in-out;
+	&:hover {
+		background-color: $color_black_2;
+	}
+}
+
+%btn_color_2 {
+	background-color: $color_white_2;
+	color: $color_text;
+	transition: all 0.5s ease-in-out;
+	&:hover {
+		background-color: $color_blue;
+		color: $color_white;
+	}
+}
+
+%btn_font {
+	font-size: 1.4rem;
+	font-weight: 900;
+	line-height: 5rem;
+	text-align: center;
+	text-transform: uppercase;
+}

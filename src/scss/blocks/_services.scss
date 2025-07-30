@@ -1,0 +1,131 @@
+@use './helpers/abstracts' as *;
+.services {
+	background-color: $color_white_3;
+}
+.services__in {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 4.8rem;
+}
+.services__info {
+	max-width: 92rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	row-gap: 2.4rem;
+}
+.services__title {
+	position: relative;
+	font-size: 2.8rem;
+	font-weight: 800;
+	line-height: 4.2rem;
+	color: $color_text;
+}
+.servises__descr {
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 2rem;
+}
+.services__list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 2.4rem;
+	row-gap: 3.8rem;
+}
+.services__item_w {
+	
+
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: calc((100% - 4.8rem) / 3);
+	min-height: 25rem;
+	padding: 2rem;
+	background-color: $color_white;
+	color: $color_text;
+	cursor: url(../imgs/services/s_2.svg), pointer;
+	.services__img {
+		color: $color_blue;
+	}
+	&:hover {
+		background-color: $color_blue;
+		color: $color_white;
+		.services__img {
+			color: $color_white;
+		}
+	}
+}
+.services__item {
+	padding: 0 1.2rem;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.services__miniblock{
+	display: block;
+	width: 3.6rem;
+	height: 3.6rem;position: absolute;
+	&.services__miniblock--1{
+		top: 0;
+		left: 0;
+		border-left: 1px solid $color_white;
+		border-top: 1px solid $color_white;
+	}
+	&.services__miniblock--2{
+		top: 0;
+		right: 0;
+		border-right: 1px solid $color_white;
+		border-top: 1px solid $color_white;
+	}
+	&.services__miniblock--3{
+		bottom: 0;
+		left: 0;
+		border-left: 1px solid $color_white;
+		border-bottom: 1px solid $color_white;
+	}
+	&.services__miniblock--4{
+		bottom: 0;
+		right: 0;
+		border-right: 1px solid $color_white;
+		border-bottom: 1px solid $color_white;
+	}
+}
+.services__img_w {
+	width: 3.6rem;
+	height: 3.6rem;
+	display: block;
+	object-fit: contain;
+	margin-bottom: 1.8rem;
+}
+.services__img {
+	@extend %contain_image;
+	
+}
+.services__item_subtitle {
+	font-size: 2rem;
+	font-weight: 800;
+	line-height: 3rem;
+	margin-bottom: 1rem;
+}
+.services__item_descr {
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.6rem;
+}
+.services__btn {
+	@extend%btn_2;
+	@extend%btn_color_1_1;
+	@extend%btn_font;
+}
